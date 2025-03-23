@@ -16,7 +16,7 @@ def enroll_face():
         if not ret:
             break
         
-        # Detect faces with YOLO
+        # Detect faces
         results = model(frame, verbose=False)
         boxes = results[0].boxes.xyxy.cpu().numpy()
         

@@ -6,7 +6,6 @@ def train_faces():
     known_encodings = []
     known_names = []
     
-    # Loop through dataset
     for person in os.listdir("dataset"):
         person_dir = os.path.join("dataset", person)
         if os.path.isdir(person_dir):
